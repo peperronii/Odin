@@ -41,6 +41,10 @@ _terminate :: proc(using thread : ^Thread, exit_code: int) {
 	unimplemented("core:thread procedure not supported on target")
 }
 
+_get_name :: proc(t: ^Thread) -> string {
+	unimplemented("core:trhead procedure not supported on target")
+}
+
 _yield :: proc() {
 	unimplemented("core:thread procedure not supported on target")
 }

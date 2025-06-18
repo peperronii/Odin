@@ -142,6 +142,13 @@ join_multiple :: proc(threads: ..^Thread) {
 }
 
 /*
+Get thread's name/description.
+*/
+get_name :: proc(thread: ^Thread) -> string {
+	return _get_name(thread)
+}
+
+/*
 Forcibly terminate a running thread.
 */
 terminate :: proc(thread: ^Thread, exit_code: int) {
